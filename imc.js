@@ -12,4 +12,8 @@ class Pessoa{
 
         return resultado.toFixed(2)
     }
+    classificaimc(){
+        let imcResultado = this.calculaimc
+        console.log(imcResultado)
+    }
 }
