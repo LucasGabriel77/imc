@@ -1,7 +1,4 @@
-let resposta = document.getElementById('resposta')
-let calcular = document.getElementById('calcular')
-
-class pessoa {
+class Pessoa{
     constructor(nome,idade,peso,altura){
         this.nome = nome
         this.idade = idade
@@ -13,6 +10,6 @@ class pessoa {
         let altura = this.altura
         let resultado = peso / (altura * altura)
 
-        return resultado
+        return resultado.toFixed(2)
     }
 }

@@ -9,18 +9,17 @@ calcular.addEventListener('click', () =>{
 
     console.log(nome, altura, idade, peso)
 
-    const pessoa1 = new Pessoa()
-    pessoa1.nome = nome
-    pessoa1.idade = idade
-    pessoa1.altura = altura 
-    pessoa1.peso = peso 
+    const pessoa1 = new Pessoa(nome ,idade ,peso ,altura)
 
     console.log(pessoa1)
- 
-    const pessoa2 = new Pessoa(nome,idade,peso,altura)
-    
-    console.log("*******")
-    console.log(pessoa2)
+
+    let imc = pessoa1.calculaimc()
+    console.log(imc)
+
+    resposta.innerHTML = `o cliente ${pessoa1.nome} <br>`
+    resposta.innerHTML += `Tem ${pessoa1.idade} anos <br>`
+    resposta.innerHTML += `com peso de ${pessoa1.peso}KG, e altura de ${pessoa1.altura}m <br>`
+    resposta.innerHTML += `tem Imc de ${imc}`
 
 
 }
